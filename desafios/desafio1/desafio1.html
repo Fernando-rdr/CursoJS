@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            width: 150px;
+            height: 50px;
+            background-color: rgba(204, 184, 184, 0.397);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Desafio das Mensagens'</h1>
+    <input type="button" value="Botão 1" onclick="clicar1()">
+    <input type="button" value="Botão 2" onclick="clicar2()">
+    <input type="button" value="Botão 3" onclick="clicar3()">
+
+    <script>
+        function clicar1() {
+            window.alert('Voçê clicou no 1º botão!')
+        }
+        function clicar2() {
+            window.alert('Voçê clicou no 2º botão!')
+        }
+        function clicar3() {
+            window.alert('Voçê clicou no 3º botão!')
+        }
+
+    </script>
 </body>
 </html>
