@@ -16,9 +16,30 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <div name="txt">Clique aqui</div>
+    <div class="doc">Outro clique</div>
     <script>
-        window.document.write(window.document.URL)
+        var d = window.document.getElementById('msg')
+        var e = window.document.getElementsByName('txt')[0]
+        var f = window.document.getElementsByClassName('doc')[0]
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        corpo.style.background = 'blackrgb(68, 125, 199)'
+        p1.style.color = 'blue'
+        document.write('<br>' + p1.innerHTML)
+        /* window.alert(p1.innerText) */
+        d.style.background = 'green'
+        d.innerText = 'exemplo de troca de texto'
+        e.innerText = 'outra troca de texto'
+        e.style.background = 'black'
+        f.innerText = 'Terceiro exemplo de troca de texto'
+        f.style.background = 'red'
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+        var e = window.document.querySelector('div.doc')
+        e.style.color = 'green'
     </script>
 </body>
 </html>
