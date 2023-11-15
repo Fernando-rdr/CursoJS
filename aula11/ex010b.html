@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferindo Nacionalidade</title>
+    <style>
+        /* var pais = 'FR'
+        console.log(`Vivendo em ${pais}`);
+        if (pais == 'Brasil') {
+            console.log('Voce é Brasileiro')
+        } else {
+            console.log('Voce é Estrangeiro')
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Sistema de Conferencia de Nacionalidade</h1>
+    Insira a sua Nacionalidade <input type="text" number="txtnac" id="txtnac"> ! <input type="button" value="Verificar" onclick="conferir()">
+    <div id="res"></div>
+
+    <script>
+        function conferir() {
+            var n1 = window.document.querySelector('input#txtnac')
+            var res = window.document.getElementById('res')
+            var vel = (n1.value)
+            res.innerHTML = `Sua Nacionalidade é ${vel}`
+            if (vel != 'brasileiro') {
+                res.innerHTML += `<p>Voçê é estrangeiro</p>`
+            }else {
+                res.innerHTML += `<p>Voce é Nativo</p>`
+            }
+            res.innerHTML += `<p>Seja Bem vindo!</p>`
+
+        }
+    </script>
+</body>
+</html>
